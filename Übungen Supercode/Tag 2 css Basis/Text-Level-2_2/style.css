@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: url(./assets/fonts/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url(assets/fonts/Fredoka-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(assets/fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: "ChelseaMarket";
+  src: url(assets/fonts/ChelseaMarket-Regular.ttf);
+}
+
+h1 {
+  font-family: "Press Start 2P";
+  text-align: center;
+  line-height: 60px;
+  background-color: #59ff00;
+}
+
+p {
+  font-family: "Pacifico";
+  font-weight: 600;
+}
+em {
+  text-shadow: 1px -2px 0 red;
+}
+
+strong {
+  font-family: "Fredoka";
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Fredoka";
+  font-weight: black;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(assets/img/mushrooms_toadstools_glow_135444_3840x2400.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+nav {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: #00bdfa;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px;
+}

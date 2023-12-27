@@ -1,0 +1,11 @@
+article {
+  border: solid black 1px;
+  margin: 15px;
+  padding: 15px;
+  display: inline-block;
+  width: 300px;
+}
+
+article li {
+  list-style: none;
+}

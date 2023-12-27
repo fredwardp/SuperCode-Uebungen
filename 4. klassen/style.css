@@ -1,0 +1,44 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section p::first-letter {
+  font-size: 40px;
+  background-color: red;
+  text-transform: uppercase;
+}
+
+section p::first-line {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+}
+
+article li::marker {
+  content: "Keine  ";
+}
+
+ul {
+  margin-left: 40px;
+}
+
+*::selection {
+  background-color: pink;
+  color: white;
+}
+
+article h1:hover {
+  background-color: green;
+}
+
+article h1:active {
+  background-color: brown;
+}
+
+/* nicht jedem HTML Element eine class geben */
+/* Class wird immer mit einem - getrennt, bei mehreren Wörtern */
+/* Class werden immmer klein geschrieben */
+/* class fangen nie mit Zahlen an */

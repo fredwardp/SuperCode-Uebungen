@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 500px;
+  height: 500px;
+  margin: 0 0 40px 40px;
+}
+
+section div:nth-of-type(1) {
+  background-image: url(assets/img/iStock-518333126-min1.jpg);
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+section div:nth-of-type(1):hover {
+  border-width: 2px;
+  border-color: green;
+  border-style: double;
+  border-width: 5px;
+}
+
+section div:nth-of-type(2) {
+  background-image: url(assets/img/iStock-1417833216-min\ crop.jpg);
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+section div:nth-of-type(2):hover {
+  filter: grayscale(100%);
+}
+
+section div:nth-of-type(3) {
+  background-image: url(assets/img/starry_sky_silhouette_swing_118434_3840x2400.jpg);
+  background-size: cover;
+  transition: all 0.3s;
+  border: 2px solid turquoise;
+}
+
+section div:nth-of-type(3):hover {
+  border-radius: 50px;
+}

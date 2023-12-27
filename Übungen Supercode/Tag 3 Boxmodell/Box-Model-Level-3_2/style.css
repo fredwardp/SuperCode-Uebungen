@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Opensans regular";
+  src: url(assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Opensans light";
+  src: url(assets/fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "Fredericka The Great";
+  src: url(assets/fonts/Fredericka_The_Great/FrederickatheGreat-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Fredericka The Great";
+}
+
+p {
+  font-family: "Opensans light";
+}
+
+nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(assets/img/yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header a {
+  padding-top: 20px;
+  color: white;
+  font-family: "Fredericka The Great";
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+}
+
+header section {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 37px;
+  color: white;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+header p {
+  text-align: center;
+  margin: 20px 0 14px 0;
+  color: white;
+}
+header button {
+  background-color: transparent;
+  border: solid 1px white;
+  padding: 10px 30px;
+  margin: auto;
+  color: white;
+  pointer-events: all;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+li a {
+  font-size: 16px;
+  font-family: "Opensans light";
+}
+
+main {
+  color: black;
+  padding: 50px 0 27px 0;
+}
+
+main section {
+  text-align: center;
+}
+
+main h2 {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+main p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 583px;
+  line-height: 20px;
+  margin: 0 auto 50px auto;
+}
+
+main button {
+  width: 210px;
+  height: 118px;
+  padding: 24px;
+  font-size: 19px;
+  font-weight: 700;
+  word-break: break-all;
+  border: 5px solid black;
+  background-color: transparent;
+}
+
+main button span {
+  display: block;
+  padding-top: 20px;
+}
+footer {
+  background-color: #3a3b4a;
+  height: 174px;
+  padding: 41px 30px 25px 30px;
+  color: white;
+}
+
+footer p {
+  max-width: 700px;
+}
+
+footer button {
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+  padding: 11px 30px;
+  margin-top: 19px;
+}

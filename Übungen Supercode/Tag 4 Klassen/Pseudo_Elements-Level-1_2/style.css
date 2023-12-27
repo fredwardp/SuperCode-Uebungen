@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+h3::first-letter {
+  color: #2e8b57;
+  font-size: 40px;
+}
+
+ul li {
+  font-weight: 600;
+}
+
+ul li:first-of-type::first-letter {
+  color: aqua;
+  font-size: 30px;
+  text-decoration: overline;
+}
+
+ul li:nth-of-type(2)::first-letter {
+  color: purple;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+ul li:nth-of-type(3)::first-letter {
+  color: greenyellow;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+ul li:nth-of-type(3) {
+  text-decoration: line-through;
+}
+
+section p:nth-of-type(1) {
+  color: #36464e;
+  font-size: 20px;
+  font-weight: 600;
+  text-indent: 50px;
+}
+
+section p:nth-of-type(2),
+section p:nth-of-type(3),
+section p:nth-of-type(4),
+section p:nth-of-type(5),
+section p:nth-of-type(6) {
+  font-weight: 600;
+}
+
+section p:nth-of-type(2),
+section p:nth-of-type(4),
+section p:nth-of-type(6) {
+  font-size: 20px;
+}
+
+section p:nth-of-type(2)::first-line,
+section p:nth-of-type(3)::first-line,
+section p:nth-of-type(4)::first-line,
+section p:nth-of-type(5)::first-line,
+section p:nth-of-type(6)::first-line {
+  color: green;
+}
+
+section p:nth-of-type(2)::first-letter,
+section p:nth-of-type(4)::first-letter,
+section p:nth-of-type(6)::first-letter {
+  font-size: 30px;
+  color: red;
+}
+
+section p:nth-of-type(3)::first-letter,
+section p:nth-of-type(5)::first-letter {
+  font-size: 20px;
+  color: red;
+}

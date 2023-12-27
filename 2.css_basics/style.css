@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Rubik;
+  src: url(fonts/Rubik-VariableFont_wght.ttf);
+}
+
+body {
+  background-image: url(./img/ZDF_logo!_Logo_2021.svg.png);
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
