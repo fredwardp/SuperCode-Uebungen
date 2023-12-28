@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* Benötigt man damit man mit REM nicht rechnen muss. So kann ich zb eine h1 nun einfach auf 1. 6rem stellen = 16px */
+  font-size: 62.25%;
+}
+
+/* # UNITS */
+
+/* ! REM */
+/* ! 1rem = 16px */
+/* - rem ist nicht abhängig vom elternelement */
+/* - rem ist moderner und wird öfters benutzt als em */
+
+/* h2 {
+  font-size: 1.6rem;
+} */
+
+/* ! EM */
+/*  - em ist abhängig vom Elternelement */
+/* - rem und em mixen geht, macht aber keinen sinn */
+
+h3 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
+}
+
+p {
+  font-size: clamp(1.2rem, 1.8vw, 2.2rem);
+}
