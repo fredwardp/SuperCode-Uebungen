@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Maven Pro";
+  src: url(assets/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Gilda Display";
+  src: url(assets/fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.25%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  min-height: 100vh;
+  background: #333333;
+  padding-top: 200px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+ul:first-of-type {
+  padding-top: 55vh;
+  border-radius: 10px 0 0 10px;
+}
+
+li {
+  list-style: none;
+  padding: 10px 23px;
+  font-family: "Maven Pro";
+  text-align: right;
+  font-size: 1.6rem;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+ul li:first-of-type {
+  border-radius: 5px 0 0 0;
+}
+
+ul li:last-of-type {
+  border-radius: 0 0 0 5px;
+}
+
+li a {
+  color: #8c8c8c;
+}
+
+.logo {
+  color: #949494;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  width: 74px;
+  font-family: "Maven Pro";
+  z-index: 999;
+}
+
+.logo span {
+  padding-left: 5px;
+}
+
+header article {
+  height: 227px;
+  width: 300px;
+  border-radius: 8px;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 0, 255, 0.475),
+    rgba(39, 39, 240, 0.88) 60%,
+    rgba(72, 206, 250, 1)
+  );
+  text-align: center;
+  color: white;
+  padding: 0 31px 20px 31px;
+  margin: 10px auto auto auto;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-family: "Gilda Display";
+  font-weight: 400;
+  width: 169px;
+  margin: 0 auto;
+}
+
+h1 span {
+  display: inline-block;
+  margin: 29px 0 26px 0;
+}
+
+p {
+  font-family: "Maven Pro";
+  font-size: 1.6rem;
+}
+
+header article p {
+  color: white;
+  text-align: center;
+}
+
+main {
+  margin-left: 51px;
+  margin-top: 290px;
+  padding-top: 85px;
+  position: relative;
+}
+
+.project {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* main article:first-of-type{
+  margin-right: auto;
+} */
+
+h2 {
+  font-family: Times, serif;
+  font-size: 5.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 56px;
+}
+
+main article p {
+  max-width: 692px;
+}
+
+main article {
+  margin-bottom: 216px;
+}
+
+main section {
+  max-width: 695px;
+  margin: 0 auto;
+}
+
+main section article {
+  margin-bottom: 80px;
+}
+
+section article a {
+  display: block;
+  height: 100%;
+  /* width: 100%; */
+  margin-bottom: 36px;
+}
+
+h3 {
+  font-family: Times, serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}

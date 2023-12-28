@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.img_1 {
+  width: 400px;
+}
+
+.img_2 {
+  width: 50%;
+}
+
+.img_3 {
+  width: 20em;
+}
+
+.img_4 {
+  width: 40rem;
+}
+
+.img_5 {
+  width: 35vw;
+}
+
+.img_6 {
+  width: 75vh;
+}
