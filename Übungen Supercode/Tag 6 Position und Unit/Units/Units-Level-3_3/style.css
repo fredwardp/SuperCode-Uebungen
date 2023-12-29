@@ -61,6 +61,10 @@ li a {
   color: #8c8c8c;
 }
 
+li a:hover {
+  text-shadow: 1px 1px 2px white;
+}
+
 .logo {
   color: #949494;
   font-size: 1.8rem;
@@ -91,6 +95,16 @@ header article {
   color: white;
   padding: 0 31px 20px 31px;
   margin: 10px auto auto auto;
+  transition: all 0.5s ease;
+}
+
+header article:hover {
+  background: linear-gradient(
+    to top right,
+    rgba(72, 206, 250, 1),
+    rgba(39, 39, 240, 0.88) 60%,
+    rgba(255, 0, 255, 0.475)
+  );
 }
 
 h1 {

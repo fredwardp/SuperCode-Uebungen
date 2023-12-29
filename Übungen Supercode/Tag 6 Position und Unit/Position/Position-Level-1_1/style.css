@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Poppins semibold";
+  src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 100vh;
+  position: relative;
+  background: url(assets/img/eugene-ga-infssQ2tjeM-unsplash.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+article {
+  text-align: right;
+  color: white;
+  position: absolute;
+  font-family: "Poppins semibold";
+  top: 20%;
+  right: 20%;
+}
