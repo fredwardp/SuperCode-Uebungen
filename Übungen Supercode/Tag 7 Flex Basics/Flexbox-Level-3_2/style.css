@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Rale Way";
+  src: url(assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rale Way";
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #8c979e;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m_auto {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1300px;
+  min-height: 100vh;
+  padding: 96px 48px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.vh70 {
+  min-height: 70vh;
+}
+
+.vh50 {
+  min-height: 50vh;
+}
+
+header {
+  min-height: calc(100vh - 77px);
+  background: url(assets/img/hero_img.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 77px;
+}
+
+header.container {
+  min-height: calc(100vh - 77px);
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: -77px;
+  height: 77px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  z-index: 999;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.15);
+}
+
+.nav_wrapper {
+  width: 90vw;
+  max-width: 1300px;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 300;
+
+  color: #666;
+}
+
+.logo:hover {
+  font-weight: 400;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav li a {
+  padding: 10px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+nav li a:hover {
+  color: #745cf9;
+}
+
+.article_column {
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 25px;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  margin-bottom: 36px;
+  color: white;
+}
+
+header article div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 408px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 200px;
+  height: 54px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #745cf9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #4c39b6;
+  color: white;
+}
+
+.button2 {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.button2:hover {
+  background: white;
+  color: black;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #0e1015;
+  margin-bottom: 27px;
+}
+
+main p {
+  margin-bottom: 36px;
+}
+
+.content_wrapper {
+  margin-left: 100px;
+  padding: 0 30px;
+  max-width: 420px;
+}
+
+.article_column img {
+  width: 34vw;
+  max-width: 660px;
+}
+
+main section:nth-child(2) {
+  background-color: #f5f5f5;
+}
+main section:nth-of-type(2) div {
+  flex-direction: row-reverse;
+}
+
+main section:nth-of-type(3) {
+  background: url(assets/img/paralax_streicne.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main .article_column h2 {
+  font-size: 6rem;
+  margin-bottom: 25px;
+  color: white;
+}
+
+main .article_column p {
+  font-size: 1.4rem;
+  margin-bottom: 36px;
+  color: white;
+  max-width: 1028px;
+}
+
+/* + Limitless Options Section */
+
+.limitless h2 {
+  text-align: center;
+}
+
+.limitless p {
+  max-width: 880px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.limitless a {
+  margin-bottom: 24px;
+}
+
+.limitless div {
+  padding-bottom: 0;
+  min-height: auto;
+  margin-bottom: -4px;
+}
+
+/* + Projects Section */
+
+.projects {
+  flex-direction: column;
+  background: #0e1015;
+  padding-top: 96px;
+}
+
+.projects h2 {
+  color: white;
+}
+
+.projects h3 {
+  color: white;
+  margin-bottom: 44px;
+}
+
+.projects article {
+  display: flex;
+  flex-wrap: wrap;
+  /* row-gap: 112px; */
+}
+
+.projects img {
+  width: 25%;
+}

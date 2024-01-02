@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+header {
+  min-height: 100vh;
+  background: url(assets/img/photo-1475666675596-cca2035b3d79.png) no-repeat
+    center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 100px 10px 60px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a {
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 10px;
+}
