@@ -7,12 +7,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rale Way";
+
   transition: all 0.3s ease;
 }
 
 html {
   font-size: 62.5%;
+  font-family: "Rale Way";
 }
 
 img {
@@ -199,14 +200,11 @@ main p {
   max-width: 660px;
 }
 
-main section:nth-child(2) {
+.portfolio {
   background-color: #f5f5f5;
 }
-main section:nth-of-type(2) div {
-  flex-direction: row-reverse;
-}
 
-main section:nth-of-type(3) {
+.parallax {
   background: url(assets/img/paralax_streicne.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
