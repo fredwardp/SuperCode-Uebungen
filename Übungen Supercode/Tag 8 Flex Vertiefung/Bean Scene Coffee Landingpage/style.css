@@ -239,7 +239,8 @@ h1 span {
   min-height: 574px;
   display: flex;
   align-items: center;
-  background: url(assets/img/Rectangle\ 14.png);
+  background: url(assets/img/Rectangle\ 14.png) no-repeat center;
+  background-size: cover;
 }
 
 .amazing .container {
