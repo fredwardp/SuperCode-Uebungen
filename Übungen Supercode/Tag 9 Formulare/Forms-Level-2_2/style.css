@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  border: 2px solid rgb(177, 177, 177);
+  margin: 15px;
+  padding: 13px;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  background-color: white;
+  top: -10px;
+}
+
+input {
+  padding: 2px;
+}
+ 

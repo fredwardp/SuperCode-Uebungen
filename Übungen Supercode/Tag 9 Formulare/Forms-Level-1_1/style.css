@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+html {
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+form {
+  max-width: 500px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #cecece;
+  margin-bottom: 15px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+input,
+select,
+textarea {
+  height: 35px;
+  padding: 5px;
+}
+
+textarea {
+  height: 120px;
+}
+
+div input {
+  width: 49%;
+}
+
+label {
+  font-weight: bold;
+}
+
+label span {
+  color: red;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: #4b99ad;
+}
+
+input[type="submit"]:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}

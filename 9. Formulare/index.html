@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulare</title>
+  </head>
+  <body>
+    <h1>Formulare</h1>
+    <form action="">
+      <!-- * Text -->
+      <!-- das for und die id sollen den selben namen tragen. -->
+      <label for="vorname">Vorname:</label>
+      <input id="vorname" type="text" />
+      <br />
+      <!-- * Number -->
+      <label for="number">Nummer</label>
+      <input id="number" type="text" />
+      <br />
+      <!-- * Tel -->
+      <label for="tel">Telefonnummer</label>
+      <input id="tel" type="tel" />
+      <br />
+      <!-- * Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+      <br />
+      <br />
+      <!-- * Radios -->
+      <div>
+        <label for="">Was machst du am liebsten?</label>
+        <input type="radio" name="fav-lang" id="html" value="html" />
+        <label for="html">HTML</label>
+        <input type="radio" name="fav-lang" id="css" value="css" />
+        <label for="css">CSS</label>
+        <input type="radio" name="fav-lang" id="js" value="js" />
+        <label for="js">JS</label>
+      </div>
+
+      <br />
+      <!-- * Check -->
+      <!--  Hier lässt sich nur eine Option auswählen -->
+      <label for="checkbox">Checkbox</label>
+      <input id="checkbox" type="checkbox" />
+      <label for="checkbox2">Checkbox2</label>
+      <input id="checkbox2" type="checkbox" />
+      <br />
+
+      <!-- * Date -->
+      <label for="date">Datum</label>
+      <input type="date" name="" id="date" />
+      <br />
+      <!--  * Password -->
+      <label for="password">Passwort</label>
+      <input type="password" id="password" />
+
+      <br />
+      <!-- * file -->
+      <label for="file">File</label>
+      <input type="file" id="file" />
+
+      <br />
+      <!-- * range -->
+      <!--  STep ist optional, jenachdem wieviel dazwischen liegen soll -->
+      <label for="range">Range</label>
+      <input type="range" id="range" min="0" max="5" step="" />
+      <br />
+
+      <!-- * button -->
+      <input type="button" value="Hallo" id="" />
+
+      <br />
+
+      <!-- * Textarea -->
+      <label for="texterea">Texterea</label>
+      <br />
+      <textarea name="" id="texterea" cols="30" rows="10"></textarea>
+      <br />
+
+      <!-- * Select & Option -->
+      <!--  Hier lässt sich nur eine Option auswählen -->
+      <!--  Hier benötigen wir wieder ein Value -->
+      <label for="cars">Select</label>
+      <select id="cars">
+        <option value="bmw">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Tesla">Tesla</option>
+      </select>
+      <br />
+
+      <!--  * Placeholder -->
+      <input type="text" placeholder="vorname..." />
+      <br />
+
+      <!-- * Disabled -->
+      <label for="disabled">Disabled</label>
+      <input id="disabled" type="text" disabled />
+      <br />
+
+      <!-- * Required = Pflichtfeld -->
+      <!--  Vorsicht man kann das required auch in den Dev Tools löschen -->
+      <label for="req">Pflichtfeld*</label>
+      <input id="req" type="text" rquired />
+
+      <br />
+
+      <!-- * Submit -->
+      <input type="submit" name="" id="req" />
+    </form>
+  </body>
+</html>

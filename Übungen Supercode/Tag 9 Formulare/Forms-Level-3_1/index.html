@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms-Level-3_1</title>
+  </head>
+  <body>
+    <form action="">
+      <div class="form_wrapper blue">
+        <h1>Sign Up Now!</h1>
+        <p>Sign up and tell us what you think of the site!</p>
+      </div>
+      <article>
+        <h2>First Name & Adress</h2>
+        <div class="form_wrapper">
+          <label for="name">Your Full Name</label>
+          <input type="text" id="name" required />
+          <label for="text">Adress</label>
+          <input type="text" id="text" />
+          <p>1</p>
+        </div>
+        <h2>Email & Phone</h2>
+        <div class="form_wrapper">
+          <label for="email">Email Adress</label>
+          <input type="email" id="email" />
+          <label for="number">Phone Number </label>
+          <input type="number" id="number" />
+          <p>2</p>
+        </div>
+        <h2>Passwords</h2>
+        <div class="form_wrapper">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+          <label for="password">Confirm Password</label>
+          <input type="password" id="password" required />
+          <p>3</p>
+        </div>
+        <div class="last_div">
+          <input type="submit" value="Senden" />
+          <div>
+            <input type="checkbox" id="checkbox" required />
+            <label for="checkbox">You agree to our Terms and Policy.</label>
+          </div>
+        </div>
+      </article>
+    </form>
+  </body>
+</html>
