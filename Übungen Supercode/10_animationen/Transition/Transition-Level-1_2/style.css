@@ -1,0 +1,28 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+section {
+  background-color: lightgray;
+}
+
+div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  transition: all 4s ease-in-out;
+}
+.rot {
+  margin-bottom: 10px;
+}
+
+.gruen {
+  background-color: green;
+  transition-delay: 2s;
+}
+
+section:hover div {
+  transform: translate(90vw);
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* ! Transition */
+  /* ? all 0 wirkt auf alle Animationen */
+  /* ? background-color = nur hintergrund etc. */
+  transition: all 0.3s ease;
+}
+
+/** Wichtig - Ich muss es dem Hauptelement geben und nicht dem hover */
+/* erster Wert - was soll animiert werden */
+/* zweiter Wert - wie lange soll die Animation dauern dauern */
+/* dritter Werr - wie lange soll die Animation verzögert werden */
+/* vierter Wert - welchen Verlauf soll die Animation haben  */
+/* https://cubic-bezier.com/ */
+
+/* # Transform */
+
+/* ? verschiebt das Element nach links/rechts/oben/unten */
+div:hover {
+  transform: translateX(50px);
+
+  /* ! Rotate */
+
+  /* ? animiert seitliche Rotation */
+  transform: rotateY(180deg);
+
+  /* ? animiert oben/unten Rotation */
+  transform: rotateY(180deg);
+
+  /* ? animiert die rotation um die eigene Achse */
+  transform: rotate(180deg);
+
+  /* ! Scale */
+  /* ? Animiert die Höhe und breite (2 heißt es wird 2x so groß) */
+  transform: scale(2);
+
+  /* ? Animiert die Breite */
+  transform: scaleX(2);
+
+  /* ? Animiert die Höhe */
+  transform: scaleY(2);
+
+  /* ! Skew */
+  /* ? animiert die Höhe und die Breite der Ecken */
+  transform: skew(80deg);
+
+  /* ! Mehrere als Shorthand */
+  transform: translate(50px, 50px) rotate (90deg);
+
+  /* !Transform Origin */
+  /* ? transform-origin verlagert den Ursprung der transform - default ist center */
+  transform-origin: top left;
+}
+
+/* # Animationen */
+/* ? Mit animation rufe ich den namen der Animation auf */
+/* ? rotateHerz = name der Animation */
+/* ? 2s = wie lange die Animation dauern soll */
+/* ? ease-on-out = Verlauf der Animation */
+/* ? infinite = wie oft soll die Animation abgespielt werden */
+/* * --------> alternate: geht wieder zurück wie die Animation gekommen ist */
+/* * --------> forwards: die Animation bleibt am Endpukt stehen wo das Keyframe aufhört (geht nur bei 1x abspielen) */
+/* ? lezter Wert = welche Verzögerung soll es geben? (in Sekunden) */
+article p {
+  font-size: 50px;
+  animation: rotate_herz 2s linear infinite alternate 2s;
+}
+
+@keyframes rotate_herz {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+article {
+  margin-bottom: 100px;
+}
+
+@keyframes scaleBig {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  animation: scaleBig 2s linear infinite;
+}

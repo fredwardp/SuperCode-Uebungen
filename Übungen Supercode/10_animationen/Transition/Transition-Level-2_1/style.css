@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+article {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background: url(assets/img/example.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+div {
+  position: absolute;
+  bottom: -300px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article:hover div {
+  bottom: 0;
+  opacity: 1;
+}

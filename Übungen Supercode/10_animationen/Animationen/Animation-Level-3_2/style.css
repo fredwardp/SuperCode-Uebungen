@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+div {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(106, 168, 13);
+  margin-right: 15px;
+  animation: snake 1s ease-in-out infinite;
+}
+
+@keyframes snake {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-30px);
+  }
+}
+
+div:nth-of-type(2) {
+  animation-delay: 0.1s;
+  background-color: rgb(74, 48, 141);
+}
+div:nth-of-type(3) {
+  animation-delay: 0.2s;
+  background-color: yellow;
+}
+div:nth-of-type(4) {
+  animation-delay: 0.3s;
+  background-color: red;
+}
+div:nth-of-type(5) {
+  animation-delay: 0.4s;
+  background-color: purple;
+}

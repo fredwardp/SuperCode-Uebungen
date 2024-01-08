@@ -1,0 +1,21 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+section {
+  height: 200px;
+  background-color: lightgray;
+}
+
+div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  transition: all 4s ease-in-out;
+}
+
+div:hover {
+  width: 100%;
+}

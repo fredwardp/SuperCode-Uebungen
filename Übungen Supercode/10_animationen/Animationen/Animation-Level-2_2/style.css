@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 600px;
+  width: 600px;
+  margin: 50px;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: red;
+  animation: square 4s ease-in-out infinite;
+}
+
+div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes square {
+  0%,
+  100% {
+    background-color: red;
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: yellow;
+  }
+  50% {
+    transform: translate(500px, 500px);
+    background-color: green;
+  }
+  75% {
+    transform: translateY(500px);
+    background-color: blue;
+  }
+}
