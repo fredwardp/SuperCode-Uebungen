@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Overflow gibt an ob ein übergroßer Inhalt in einem Element beschnitten, sichtbar oder scrollbar sein soll */
+
+.overflow {
+  background-color: chocolate;
+
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.overflow div {
+  width: 45vw;
+}
+
+.overflow img {
+  width: 45vw;
+}
+
+header {
+  background-color: aqua;
+}
+
+.burger {
+  height: 5px;
+  width: 25px;
+  background-color: black;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.burger-wapper {
+  top: 30px;
+  right: 30px;
+  position: fixed;
+  display: none;
+}
+
+
+/* ! Media Queries */
+/* Handy - 567px */
+/* Tablets - 768px */
+/* Desktop - 992px */

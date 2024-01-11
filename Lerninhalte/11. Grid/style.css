@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div:nth-child(odd) {
+  background-color: orange;
+}
+
+div:nth-child(even) {
+  background-color: blue;
+}
+
+/*  → Column sind Horizontal */
+/*  Rows sind Vertikal */
+
+/* ! Das Eltern-Element ansprechen mit Display: Grid */
+
+.grid-parent {
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: grid;
+  gap: 5px;
+
+  /* ! Bau erstmal die Basis der Columns auf. */
+
+  /*  1fr = 1 fraction (Bruchteil vom verfügbaren Rest) */
+  /*  2fr = sind doppelt so groß wie 1fr */
+  /*  1.25fr = 1.25x so groß wie 1fr */
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
+  /*  Es ist auch Möglich fr und Pixel zu mixen */
+  /* ! Rows werden bei bedarf automatisch generiert und müssen nicht manuell eingestellt */
+}
+
+section .box_1 {
+  background-color: green;
+  /* Mit Column start sage ich wo das Element starten soll und mit end wo es enden soll (man muss immer +1 sagen wo es enden soll) */
+
+  grid-column-start: 1;
+  grid-column-end: span 2;
+
+  /*  Kurzschreibform */
+  grid-column: 1 / -1;
+
+  /* span benutzen - mit span sagen wir er soll sich über 4 Elemente strecken. (es wird also nichtmehr der Rand gezählt) */
+  /*  mit -1 nimmt er die ganze Breite ein grid-columns: 1 / -1 */
+
+  /*   ! Align- und Justify-self */
+  /* align-self: center;
+  justify-self: center; */
+}
